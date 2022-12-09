@@ -17,7 +17,7 @@ def strangeCreature():
     elif userInput == "correr":
       showSkeletons()
     else:
-      print("por favor, digite uma opção valida")
+      print("por favor, digite uma opção valida.")
 
 def showSkeletons():
   directions = ["trás","frente"]
@@ -50,7 +50,7 @@ def hauntedRoom():
     elif userInput == "trás":
       introScene()
     else:
-      print("por favor, digite uma opção valida")
+      print("por favor, digite uma opção valida.")
 
 def cameraScene():
   directions = ["frente","trás"]
@@ -80,13 +80,13 @@ def showShadowFigure():
     elif userInput == "trás":
       introScene()
     else:
-      print("por favor, digite uma opção valida")
+      print("por favor, digite uma opção valida.")
 
 def introScene():
   directions = ["left","right","forward"]
   print("Você está em uma encruzilhada, e pode escolher ir para qualquer uma das 4 direções. Pra onde você vai?")
   userInput = ""
-  while userInput not in actions:
+  while userInput not in directions:
       print("Opções: esquerda/direita/trás/frente")
       userInput = input()
       if userInput == "esquerda":
@@ -98,11 +98,11 @@ def introScene():
       elif userInput == "trás":
         print("está porta dá de cara com uma parede..")
       else:
-        print("por favor, digite uma opção válida")
+        print("por favor, digite uma opção válida.")
 
 
 if __name__ == "__main__":
-  while true:
+  while True:
     print("bem vindo ao level 1!")
     print("Você decide viajar para paris (durante suas ferias), é vai fazer uma visita as famosas catacumbas.")
     print("entretanto, durante sua exploração, você se perde.")
