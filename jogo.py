@@ -100,7 +100,6 @@ def introScene():
       else:
         print("por favor, digite uma opção válida.")
 
-
 if __name__ == "__main__":
   while True:
     print("bem vindo ao level 1!")
